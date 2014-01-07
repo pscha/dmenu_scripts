@@ -1,0 +1,4 @@
+#!/bin/sh
+
+notification=$1
+echo $notification |dmenu
