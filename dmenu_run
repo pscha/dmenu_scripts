@@ -1,8 +1,9 @@
 #!/bin/sh
+cachedir=${XDG_CACHE_HOME:-"$HOME/.cache"}
 if [ -f $HOME/.dmenurc ]; then
     . $HOME/.dmenurc
 else
     DMENU='dmenu -i'
 fi
-notification=$1
-echo $notification |$DMENU
+
+ls /usr/bin | $DMENU |sh
