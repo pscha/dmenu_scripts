@@ -1,7 +1,7 @@
-dmenu_notify
+dmenu_scripts
 ============
 
-a script for urgent notifications via dmenu
+scripts for various uses via dmenu
 
 installation
 ------------
