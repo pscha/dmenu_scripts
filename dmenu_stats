@@ -1,9 +1,2 @@
 #!/bin/sh
-
-if [ -f $HOME/.dmenurc ]; then
-    . $HOME/.dmenurc
-else
-    DMENU='dmenu -i'
-fi
-
-sh /home/martensen/bin/scripts/status.sh |$DMENU 
+sh /home/martensen/bin/scripts/status.sh | dmenu
