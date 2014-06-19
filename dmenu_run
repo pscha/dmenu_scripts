@@ -1,2 +1,2 @@
 #!/bin/sh
-ls /usr/bin | dmenu |sh
+ls $PATH | dmenu |sh

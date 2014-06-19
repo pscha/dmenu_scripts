@@ -1,11 +1,12 @@
+DIR = /usr/local/bin
 install:
-	cp -f dmenu_notify /usr/bin
-	cp -f dmenu_run /usr/bin
-	cp -f dmenu_mocp /usr/bin
-	cp -f dmenu_stats /usr/bin
+	cp -f dmenu_notify $(DIR) 
+	cp -f dmenu_run $(DIR)
+	cp -f dmenu_mocp $(DIR)
+	cp -f dmenu_stats $(DIR)
 
 uninstall:
-	rm -f /usr/bin/dmenu_notify
-	rm -f /usr/bin/dmenu_mocp
-	rm -f /usr/bin/dmenu_run
-	rm -f /usr/bin/dmenu_stats
+	rm -f $(DIR)/dmenu_notify
+	rm -f $(DIR)/dmenu_mocp
+	rm -f $(DIR)/dmenu_run
+	rm -f $(DIR)/dmenu_stats
